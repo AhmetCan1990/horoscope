@@ -17,8 +17,20 @@
   text-decoration: underline;
   &:hover {
     color: $headerColor;
+    animation-name: head;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
   }
 }
+@keyframes head {
+  from {
+    color: $headerColor;
+  }
+  to {
+    color: $navColor;
+  }
+}
+
 .cardCont {
   @include flexing(flex, space-evenly, strech, row, wrap);
   gap: 3rem;
