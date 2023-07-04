@@ -15,6 +15,9 @@
   text-align: center;
   padding: 10rem 0 0rem;
   text-decoration: underline;
+  &:hover {
+    color: $headerColor;
+  }
 }
 .cardCont {
   @include flexing(flex, space-evenly, strech, row, wrap);
