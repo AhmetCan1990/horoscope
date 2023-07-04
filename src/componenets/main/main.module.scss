@@ -59,13 +59,15 @@
   }
 }
 .card:hover .overlay-text {
+  height: 250px;
   opacity: 0.8;
 }
 .overlay-text {
   position: absolute;
   top: 37px;
   opacity: 0;
-  transition: 0.5s ease;
+  height: 0px;
+  transition: 1s ease;
   background-color: $navColor;
   color: whitesmoke;
   padding: 10px;
